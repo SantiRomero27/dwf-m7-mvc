@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="#" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@400;600&display=swap"
+            rel="stylesheet"
+        />
+        <title>MVC Prueba</title>
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="./styles.css" />
+
+        <!-- Script -->
+        <script type="module" src="./index.ts"></script>
+    </head>
+    <body>
+        <!-- App -->
+        <div id="root">
+            <form class="user-form">
+                <label for="username" class="user-form__name">Nombre</label>
+                <input
+                    type="text"
+                    name="username"
+                    id="username"
+                    class="user-form__name-input"
+                    autocomplete="off"
+                />
+                <label for="userbio" class="user-form__bio">Bio</label>
+                <textarea
+                    name="userbio"
+                    id="userbio"
+                    class="user-form__bio-input"
+                ></textarea>
+
+                <div class="image-drop">
+                    <h2 class="image-drop__text">Arrastrá tu imagen acá</h2>
+                    <h2 class="image-drop__text">o clickeá directamente ;)</h2>
+                    <img class="image-drop__display" />
+                </div>
+
+                <button class="user-form__button">Guardar</button>
+            </form>
+        </div>
+    </body>
+</html>

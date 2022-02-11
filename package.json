@@ -1,0 +1,28 @@
+{
+    "name": "mvc-prueba",
+    "version": "1.0.0",
+    "license": "MIT",
+    "dependencies": {
+        "@types/node": "^17.0.10",
+        "cloudinary": "^1.28.1",
+        "cors": "^2.8.5",
+        "dotenv": "^14.2.0",
+        "dropzone": "^6.0.0-beta.2",
+        "express": "^4.17.2",
+        "jsonwebtoken": "^8.5.1",
+        "parcel": "^2.3.0",
+        "pg": "^8.7.1",
+        "pg-hstore": "^2.3.4",
+        "sequelize": "^6.13.0",
+        "typescript": "^4.5.5"
+    },
+    "scripts": {
+        "dev:back": "ts-node ./back-src/api.ts",
+        "dev:front": "parcel serve ./front-src/index.html",
+        "sync:back": "ts-node ./back-src/sync.ts",
+        "build:back": "tsc ./back-src/api.ts --outDir back-dist",
+        "build:front": "parcel build ./front-src/index.html",
+        "build": "yarn build:back && yarn build:front",
+        "start": "node ./back-dist/back-src/api.js"
+    }
+}

@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Spline Sans", sans-serif;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    height: 100vh;
+    width: 60%;
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+.user-form {
+    display: flex;
+    flex-direction: column;
+
+    padding: 25px;
+    background-color: rgb(211, 211, 211);
+    box-shadow: 0 0 15px -2px rgba(0, 0, 0, 0.25);
+    border-radius: 35px 5px;
+}
+
+.user-form > * {
+    font-family: "Spline Sans", sans-serif;
+}
+
+.user-form > label {
+    font-weight: 600;
+    font-size: 22px;
+
+    margin-bottom: 5.5px;
+}
+
+.user-form__name-input {
+    height: 35px;
+}
+
+.user-form__bio-input {
+    min-height: 75px;
+    resize: vertical;
+}
+
+.user-form__name-input,
+.user-form__bio-input {
+    padding: 5px;
+    margin-bottom: 25px;
+
+    font-size: 16px;
+}
+
+.user-form__name-input,
+.user-form__bio-input,
+.user-form__button {
+    border-radius: 3px;
+    border-style: none;
+}
+
+.user-form__button {
+    padding: 10px 0;
+    font-size: 18px;
+    cursor: pointer;
+
+    background-color: rgb(70, 70, 240);
+    color: white;
+}
+
+.image-drop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 20px;
+    margin-bottom: 30px;
+    background-color: rgb(247, 245, 245);
+    box-shadow: inset 0px 0px 12px -5px rgba(0, 0, 0, 0.3);
+    border: dotted 1.5px rgb(63, 61, 61);
+    border-radius: 3.5px;
+    cursor: pointer;
+}
+
+.image-drop__text {
+    font-size: 16px;
+    text-align: center;
+
+    margin: 0;
+}
+
+.image-drop__text:first-of-type {
+    margin-bottom: 2px;
+}
+
+.image-drop__text:last-of-type {
+    font-size: 11px;
+}
+
+.image-drop__display {
+    margin-top: 7.5px;
+    width: 20%;
+}
